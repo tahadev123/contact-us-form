@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Contact App</title>
+</head>
+<body>
+    <div class="message-box">
+        <div>
+            <img src="./assets/images/icon-success-check.svg" alt="">
+            <h4>Message Sent!</h4>
+        </div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <div class="box">
+        <h1>Contact Us</h1>
+        <div class="form">
+            <div class="information">
+                <div>
+                    <label for="first-name">First Name<span class="important">*</span></label>
+                    <input type="text" id="first-name" name="first-name">
+                    <p class="error"></p>
+                </div>
+                
+                <div>
+                    <label for="last-name">Last Name<span class="important">*</span></label>
+                    <input type="text" id="last-name" name="last-name">
+                    <p class="error"></p>
+                </div>
+            </div>
+
+            <label for="email">Email Address<span class="important">*</span></label>
+            <input type="email" name="email" id="email">
+            <p class="error"></p>
+
+            <label for="">Query Type<span class="important">*</span></label>
+            <div class="query">
+                <div class="query-box">
+                    <input class="input-query" type="radio" name="query"><span>General Enquiry</span>
+                </div>
+                <div class="query-box">
+                    <input class="input-query" type="radio" name="query"><span>Support Request</span>
+                </div>
+            </div>
+            <p class="error"></p>
+
+            <label for="message">Message<span class="important">*</span></label>
+            <textarea name="message" id="message"></textarea>
+            <p class="error"></p>
+
+            <div class="privacy-policy">
+                <input type="checkbox" name="privacy" id="privacy"><span>I consent to being contacted by the team<span class="important">*</span></span>
+                <p class="error"></p>
+            </div>
+            <button class="submit">Submit</button>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
